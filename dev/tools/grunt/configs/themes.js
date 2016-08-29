@@ -41,6 +41,17 @@ module.exports = {
         ],
         dsl: 'less'
     },
+    ar_default: {
+        area: 'frontend',
+        name: 'Ar/default',
+        locale: 'en_US',
+        files: [
+//            'css/styles-m',
+//            'css/styles-l',
+            'css/source/_theme'
+        ],
+        dsl: 'less'
+    },
     backend: {
         area: 'adminhtml',
         name: 'Magento/backend',

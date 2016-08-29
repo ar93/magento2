@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<body>
+    <referenceContainer name="product.info.social">
+        <block class="Ar\SecondExtension\Block\Product\View\Extra" name="product.view.extra" template="product/view/extra.phtml" after="-"/>
+    </referenceContainer>
+</body>
