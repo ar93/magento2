@@ -11,6 +11,10 @@
          bootstrap="./framework/bootstrap.php"
         >
     <testsuite name="Magento Unit Tests">
+
+        <directory suffix="Test.php">../../../app/code/Ar/Calculation/Test/Unit</directory>
+
+        <!--
         <directory suffix="Test.php">../../../app/code/*/*/Test/Unit</directory>
         <directory suffix="Test.php">../../../dev/tools/*/*/Test/Unit</directory>
         <directory suffix="Test.php">../../../dev/tools/*/*/*/Test/Unit</directory>
@@ -20,6 +24,7 @@
         <directory suffix="Test.php">../../../vendor/*/module-*/Test/Unit</directory>
         <directory suffix="Test.php">../../../vendor/*/framework/Test/Unit</directory>
         <directory suffix="Test.php">../../../vendor/*/framework/*/Test/Unit</directory>
+        -->
     </testsuite>
     <php>
         <ini name="date.timezone" value="America/Los_Angeles"/>
