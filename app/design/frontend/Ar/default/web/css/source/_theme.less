@@ -5,3 +5,23 @@
 @button-primary__hover__background: @color-blue1;
 @button-primary__border: 0px solid @color-orange-red2;
 @button-primary__hover__border: 0px solid @color-orange-red2;
+
+@media screen and (min-width: 768px), print {
+    .header.panel > .header.links > li { font-size: 14px; margin: 0 0 0 15px; }
+    .customer-welcome { position: relative; }
+    .customer-welcome:before, .customer-welcome:after { content: ''; display: table; }
+    .customer-welcome .customer-menu { display: none; }
+    .header.panel > .header.links > .customer-welcome + .authorization-link { display: none; }
+    .customer-welcome .action.switch { padding: 0; cursor: pointer; display: inline-block; text-decoration: none; }
+    .customer-welcome .action.switch { background-image: none; background: none; -moz-box-sizing: content-box; border: 0; box-shadow: none; line-height: inherit; margin: 0; padding: 0; text-decoration: none; text-shadow: none; font-weight: 400; color: #ffffff; }
+    .customer-welcome .action.switch:after { -webkit-font-smoothing: antialiased; font-size: 10px; line-height: 22px; color: #333; content: '\e622'; font-family: 'luma-icons'; margin: 0; vertical-align: top; display: inline-block; font-weight: normal; overflow: hidden; speak: none; text-align: center; }
+
+    .customer-welcome.active .customer-menu { display: block; }
+    .customer-welcome .header.links { min-width: 175px; }
+    .customer-welcome ul { margin: 0; padding: 0; list-style: none none; background: #ffffff; border: 1px solid #bbbbbb; margin-top: 4px; min-width: 100%; z-index: 101; box-sizing: border-box; display: none; top: 100%; right: 0; box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15); }
+    .customer-welcome ul:before,
+    .customer-welcome ul:after { border-bottom-style: solid; content: ''; display: block; height: 0; position: absolute; width: 0; }
+    .customer-welcome ul:before { right: 10px; top: -12px; border: 6px solid; border-color: transparent transparent #ffffff transparent; z-index: 99; }
+    .customer-welcome.active ul { display: block; position: absolute; }
+}
+
