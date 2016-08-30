@@ -34,6 +34,8 @@ class Calculation implements ObserverInterface
 //            var_dump($item_id);
 //        }
 
+        //diferences - magento1 - keys of product_options are the options_ids
+        //diferences - magento2 - keys of product_options starts from 0
         $product_options = $product->getOptions();
 //        var_dump($product_options);
         if (is_array($item_options))
